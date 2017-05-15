@@ -108,7 +108,7 @@
       "check-format",
       "allow-leading-underscore",
       "ban-keywords"
-    ],6
+    ],
     "whitespace": [
       true,
       "check-branch",
