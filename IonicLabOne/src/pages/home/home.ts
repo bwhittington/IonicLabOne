@@ -17,6 +17,10 @@ export class HomePage {
         this.navCtrl.push("CoursesPage");
     }
 
+    public goToInstructors(): void {
+        this.navCtrl.push("InstructorsPage");
+    }
+
     ionViewDidLoad() {
         console.log('ionViewDidLoad HomePage');
     }

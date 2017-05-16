@@ -27,6 +27,6 @@ export class CoursePage {
     }
 
     ionViewDidLoad() {
-        console.log('ionViewDidLoad HomePage');
+        console.log('ionViewDidLoad Course');
     }
 }
