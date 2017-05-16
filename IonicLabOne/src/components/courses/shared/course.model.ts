@@ -3,5 +3,3 @@
     public name: string;
     public syllabus: string;
 }
-
-

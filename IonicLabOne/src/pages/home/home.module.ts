@@ -1,21 +1,17 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NgModule } from '@angular/core';
+import { IonicPageModule } from 'ionic-angular';
 
-import { CourseListModule } from '../course-list/course-list.module';
+import { HomePage } from './home';
 
-@Component({
-    selector: 'page-home',
-    templateUrl: 'home.html'})
-
-export class HomeModule {
-
-    private navCtrl: NavController;
-
-    constructor(navCtrl: NavController) {
-        this.navCtrl = navCtrl;
-    }
-
-    public goToCourses(): void {
-        //this.navCtrl.push(Courses);
-    }
-}
+@NgModule({
+  declarations: [
+    HomePage,
+  ],
+  imports: [
+    IonicPageModule.forChild(HomePage),
+  ],
+  exports: [
+    HomePage
+  ]
+})
+export class HomePageModule { }

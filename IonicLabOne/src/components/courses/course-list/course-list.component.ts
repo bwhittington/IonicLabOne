@@ -1,20 +1,20 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { CourseService } from '../../components/courses/shared/course.service';
+import { CourseService } from '../shared/course.service';
 
 @Component({
-    selector: 'page-course-list',
-    templateUrl: 'course-list.html'})
+    selector: 'course-list',
+    templateUrl: 'course-list.html' })
 
-export class CourseListModule {
+export class CourseList {
 
     public courses: Array<Object>;
     public courseService: CourseService;
     public navCtrl: NavController;
     private id: number;
 
-    constructor(courseService: CourseService, navCtrl: NavController) {
+    constructor(courseService: CourseService, navCtrl: NavController ) {
         this.courseService = courseService;
         this.courses = this.courseService.getCourses();
         this.navCtrl = navCtrl;
@@ -22,6 +22,6 @@ export class CourseListModule {
 
     public goToCourse(id: number): void {
         this.id = id;
-        //this.navCtrl.push(Course, { 'id': this.id });
+        this.navCtrl.push("CoursePage", { 'id': this.id });
     }
 }

@@ -1,24 +1,20 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { CoursesPage } from '../courses/courses';
+import { CourseService } from '../../components/courses/shared/course.service';
 
 @IonicPage()
 @Component({
-    selector: 'page-home',
-    templateUrl: 'home.html',
+    selector: 'page-courses',
+    templateUrl: 'courses.html',
+    providers: [CourseService]
 })
-export class HomePage {
 
+export class CoursesPage {
     constructor(public navCtrl: NavController, public navParams: NavParams) {
-    }
-
-    public goToCourses(): void {
-        this.navCtrl.push("CoursesPage");
     }
 
     ionViewDidLoad() {
         console.log('ionViewDidLoad HomePage');
     }
-
 }
