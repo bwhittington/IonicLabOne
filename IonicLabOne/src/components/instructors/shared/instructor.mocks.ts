@@ -1,14 +1,14 @@
 ﻿import { InstructorModel } from './instructor.model';
 
 export const instructors: InstructorModel[] = [
-    { id: 1, name: 'C#/.NET', syllabus: '' },
-    { id: 2, name: 'HTML/CSS/Responsive', syllabus: '' },
-    { id: 3, name: 'MVC/Web API', syllabus: '' },
-    { id: 4, name: 'Java', syllabus: '' },
-    { id: 5, name: 'JavaScript', syllabus: '' },
-    { id: 6, name: 'SQL', syllabus: '' },
-    { id: 7, name: 'Cordova', syllabus: '' },
-    { id: 8, name: 'Consulting Book', syllabus: '' }];
+    { id: 1, name: 'Gill Bates' },
+    { id: 2, name: 'Allen Paul' },
+    { id: 3, name: 'Uncle Martin Bob' },
+    { id: 4, name: 'Steve Unemployed' },
+    { id: 5, name: 'Gott Scuthrie' },
+    { id: 6, name: 'Al Turning' },
+    { id: 7, name: 'William Wright' },
+    { id: 8, name: 'Zach Muckerberg' }];
 
 export class InstructorServiceMock {
     // constructor() { }
