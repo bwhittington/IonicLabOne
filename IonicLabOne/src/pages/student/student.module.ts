@@ -10,7 +10,7 @@ import { StudentService } from '../../components/students/shared/student.service
     ],
     imports: [
         IonicPageModule.forChild(StudentPage)
-    ],   
+    ],
     exports: [
         StudentPage
     ],

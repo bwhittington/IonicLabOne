@@ -1,4 +1,4 @@
-﻿import { Component, Input } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { CourseService } from '../../components/courses/shared/course.service';
@@ -26,7 +26,7 @@ export class CoursePage {
         this.courseModel = this.courseService.getCourse(this.id);
     }
 
-    ionViewDidLoad() {
+    public ionViewDidLoad(): void {
         console.log('ionViewDidLoad Course');
     }
 }

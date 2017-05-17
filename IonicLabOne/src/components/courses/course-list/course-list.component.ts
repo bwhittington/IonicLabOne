@@ -22,6 +22,6 @@ export class CourseList {
 
     public goToCourse(id: number): void {
         this.id = id;
-        this.navCtrl.push("CoursePage", { 'id': this.id });
+        this.navCtrl.push('CoursePage', { 'id': this.id });
     }
 }

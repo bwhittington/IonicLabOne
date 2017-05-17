@@ -11,10 +11,13 @@ import { InstructorService } from '../../components/instructors/shared/instructo
 })
 
 export class InstructorsPage {
-    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    private navCtrl: NavController;
+
+    constructor(navCtrl: NavController, navParams: NavParams) {
+        this.navCtrl = navCtrl;
     }
 
-    ionViewDidLoad() {
+    public ionViewDidLoad(): void {
         console.log('ionViewDidLoad Intructors');
     }
 }

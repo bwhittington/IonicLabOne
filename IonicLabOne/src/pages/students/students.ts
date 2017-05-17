@@ -11,10 +11,13 @@ import { StudentService } from '../../components/students/shared/student.service
 })
 
 export class StudentsPage {
-    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    private navCtrl: NavController;
+
+    constructor(navCtrl: NavController, navParams: NavParams) {
+        this.navCtrl = navCtrl;
     }
 
-    ionViewDidLoad() {
+    public ionViewDidLoad(): void {
         console.log('ionViewDidLoad Intructors');
     }
 }

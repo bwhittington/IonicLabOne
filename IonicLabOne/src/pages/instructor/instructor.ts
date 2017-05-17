@@ -1,4 +1,4 @@
-﻿import { Component, Input } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { InstructorService } from '../../components/instructors/shared/instructor.service';
@@ -26,7 +26,7 @@ export class InstructorPage {
         this.instructorModel = this.instructorService.getInstructor(this.id);
     }
 
-    ionViewDidLoad() {
+    public ionViewDidLoad(): void {
         console.log('ionViewDidLoad Instructor');
     }
 }

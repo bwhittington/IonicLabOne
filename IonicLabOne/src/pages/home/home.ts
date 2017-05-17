@@ -1,31 +1,31 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { CoursesPage } from '../courses/courses';
-
 @IonicPage()
 @Component({
     selector: 'page-home',
     templateUrl: 'home.html',
 })
 export class HomePage {
+    private navCtrl: NavController;
 
-    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    constructor(navCtrl: NavController, navParams: NavParams) {
+        this.navCtrl = navCtrl;
     }
 
     public goToCourses(): void {
-        this.navCtrl.push("CoursesPage");
+        this.navCtrl.push('CoursesPage');
     }
 
     public goToInstructors(): void {
-        this.navCtrl.push("InstructorsPage");
+        this.navCtrl.push('InstructorsPage');
     }
 
     public goToStudents(): void {
-        this.navCtrl.push("StudentsPage");
+        this.navCtrl.push('StudentsPage');
     }
 
-    ionViewDidLoad() {
+    public ionViewDidLoad(): void  {
         console.log('ionViewDidLoad HomePage');
     }
 

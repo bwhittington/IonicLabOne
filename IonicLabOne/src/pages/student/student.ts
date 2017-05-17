@@ -1,4 +1,4 @@
-﻿import { Component, Input } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { StudentService } from '../../components/students/shared/student.service';
@@ -26,7 +26,7 @@ export class StudentPage {
         this.studentModel = this.studentService.getStudent(this.id);
     }
 
-    ionViewDidLoad() {
+    public ionViewDidLoad(): void {
         console.log('ionViewDidLoad Student');
     }
 }

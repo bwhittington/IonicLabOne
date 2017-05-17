@@ -11,10 +11,13 @@ import { CourseService } from '../../components/courses/shared/course.service';
 })
 
 export class CoursesPage {
-    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    private navCtrl: NavController;
+
+    constructor(navCtrl: NavController, navParams: NavParams) {
+        this.navCtrl = navCtrl;
     }
 
-    ionViewDidLoad() {
+    public ionViewDidLoad(): void {
         console.log('ionViewDidLoad Courses');
     }
 }

@@ -5,16 +5,10 @@ import { CoursePage } from './course';
 import { CourseService } from '../../components/courses/shared/course.service';
 
 @NgModule({
-    declarations: [
-        CoursePage
-    ],
-    imports: [
-        IonicPageModule.forChild(CoursePage)
-    ],   
-    exports: [
-        CoursePage
-    ],
-    providers: [CourseService]
+    declarations: [ CoursePage ],
+    imports: [ IonicPageModule.forChild(CoursePage) ],
+    exports: [ CoursePage ],
+    providers: [ CourseService ]
 })
 
 export class CoursePageModule { }

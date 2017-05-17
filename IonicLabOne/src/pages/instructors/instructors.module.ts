@@ -5,7 +5,6 @@ import { InstructorsPage } from './instructors';
 import { InstructorList } from '../../components/instructors/instructor-list/instructor-list.component';
 import { InstructorService } from '../../components/instructors/shared/instructor.service';
 
-
 @NgModule({
     declarations: [
         InstructorsPage,
@@ -13,7 +12,7 @@ import { InstructorService } from '../../components/instructors/shared/instructo
     ],
     imports: [
         IonicPageModule.forChild(InstructorsPage)
-    ],   
+    ],
     exports: [
         InstructorsPage,
         InstructorList
